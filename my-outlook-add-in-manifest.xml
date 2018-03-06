@@ -36,13 +36,6 @@
 
   <Hosts>
     <Host Name="Mailbox" />
-    <MobileFormFactor>
-      <FunctionFile resid="residUILessFunctionFileUrl" />
-      <ExtensionPoint xsi:type="MobileMessageReadCommandSurface">
-        <!-- information on this extension point -->
-      </ExtensionPoint> 
-      <!-- possibly more ExtensionPoint elements -->
-    </MobileFormFactor>
   </Hosts>
   <Requirements>
     <Sets>
