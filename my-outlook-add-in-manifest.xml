@@ -24,7 +24,7 @@
   <HighResolutionIconUrl DefaultValue="https://fast-gorge-96460.herokuapp.com/assets/hi-res-icon.png"/>
 
   <!--If you plan to submit this add-in to the Office Store, uncomment the SupportUrl element below-->
-  <SupportUrl DefaultValue="[Insert the URL of a page that provides support information for the app]" />
+  <SupportUrl DefaultValue="https://gist.github.com/mateodaza/9a40c27c356121e4c722637e9908a3ed" />
 
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
   <AppDomains>
