@@ -10,6 +10,8 @@ class App extends Component {
     }
 
     this.getAppointment = this.getAppointment.bind(this);
+    this.setInfo = this.setInfo.bind(this);
+
   }
 
   onSetColor() {
@@ -34,6 +36,15 @@ class App extends Component {
 
   }
 
+  setInfo() {
+    window.Office.context.mailbox.item.body.setAsync(
+      "<b>Hello there!</b>",
+      { coercionType:"html", asyncContext:"This is passed to the callback" },
+      function callback(result) {
+        // Process the result
+    });
+  }
+
   render() {
     return (
       <div id="content">
@@ -43,8 +54,10 @@ class App extends Component {
           </div>
         </div>
         <div id="content-main">
-            <button onClick={this.getAppointment.bind(this)} type="button"> Get Appointment's Body </button>
+            <button onClick={this.getAppointment.bind(this)} type="button"> Get Appointment's Subject </button>
+            <button onClick={this.setInfo.bind(this)} type="button"> Set some information </button>
             <p> {this.state.subject} </p>
+
         </div>
       </div>
     );
